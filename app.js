@@ -2,7 +2,8 @@ const express= require("express");
 const app=express();
 const path=require("path");
 const cookieParser=require("cookie-parser");
-const user
+const { request } = require("http");
+const userModel=require("./models/model");
 
 
 app.use(express.json());
@@ -12,7 +13,7 @@ app.use(express.static(path.join(__dirname,"public")));
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-  res.send('Hello');
+  res.render("index");
 });
 
 app.listen(3000);
