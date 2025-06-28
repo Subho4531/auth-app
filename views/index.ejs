@@ -9,8 +9,15 @@
 
 </head>
 <body>
-    <div class="w-full h-screen bg-zinc-900">
-
-    </div>    
+    <div class="w-full h-screen p-10 bg-zinc-900">
+    <h1 class="text-white text-4xl py-4 tracking-tighter">Create User</h1>
+    <form class="flex flex-col gap-2 w-96 " action="/create" method="post">
+        <input class="p-3 bg-white rounded-md" type="text" placeholder="User Name" name="username">
+        <input class="p-3 bg-white rounded-md" type="password" placeholder="Password" name="password">
+        <input class="p-3 bg-white rounded-md" type="email" placeholder="Email" name="email">
+        <input class="p-3 bg-white rounded-md" type="text" placeholder="Age" name="age">
+        <input type="submit" class="p-2 bg-blue-500 rounded-md text-white w-1/2" value="Create User">
+    </form>
+</div>
 </body>
 </html>
